@@ -18,9 +18,12 @@ export default function NavBar(){
                 <div style={{fontSize:16, marginRight:20}}>{"Portfolio"}</div>
                 </a>
 
+                <div>
                 <a target="_blank" rel="noreferrer noopener" href="https://www.megansyukur.ca/resume">
                 <div style={{fontSize:16}}>{"Resume"}</div>
                 </a>
+
+                </div>
 
             </div>
         </div>

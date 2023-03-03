@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 import NavBar from '../comps/NavBar'
 import Intro from '../comps/Intro'
 import Marquee from '../comps/Marquee'
+import Header from '../comps/Header'
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       </Head>
 
     <main className={styles.main}>
+      <Header/>
         <NavBar/>
 
         <div style={{display:'flex', flexDirection:'row', marginTop:''}}>
