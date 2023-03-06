@@ -15,7 +15,7 @@ export default function Intro(){
         
         <a target="_blank" rel="noreferrer noopener" href='http://megansyukur.ca/about'>
             <div className={styles.learnMoreDiv}>
-            <Image src='/../public/aarrow.png' width={15} height={15} className={styles.arrow}></Image>
+            <Image src='/../public/aarrow.png' width={15} height={15} className={styles.arrow} alt="arrow"></Image>
             <div className={styles.learnMore}>
             {'Learn more about me'}
             </div>
