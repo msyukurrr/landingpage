@@ -16,7 +16,7 @@ const Header = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-          <Image src='/../public/logo.png' height={100} width={100}/>
+          <Image src='/../public/logo.png' height={100} width={100} style={{margin:20}}/>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}

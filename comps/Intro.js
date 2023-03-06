@@ -27,11 +27,11 @@ export default function Intro(){
 
             <div style={{display:'flex'}}>
             <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/megan-syukur/">
-                <Image src='/../public/linkedin.png' width={40} height={40} className={styles.icon}/>
+                <Image src='/../public/linkedin.png' width={50} height={50} className={styles.icon}/>
             </a>
 
             <Link href="mailto: megansyukur@hotmail.com" legacyBehavior>
-                <Image src='/../public/email-button.png' width={40} height={30} className={styles.icon}/>
+                <Image src='/../public/email-button.png' width={50} height={50} className={styles.icon}/>
             </Link>
             </div>
         </div>

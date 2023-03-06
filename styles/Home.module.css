@@ -102,7 +102,6 @@
   font-weight: 400;
   font-family: 'Inter';
   margin-left:2vw;
-  width:40vw;
 }
 
 .learnMoreDiv{
@@ -114,14 +113,13 @@
 
 .learnMore{
   font-family:'Source Code Pro';
-  font-size: 18px;
+  font-size: 20px;
   background-color:transparent;
   margin-left: 1vw;
-  width:10vw;
 }
 
 .arrow{
-  margin-top:2px;
+margin-top: 2px;
 }
 
 .learnMore:hover{
@@ -132,6 +130,8 @@
 .conCont{
   margin-top:10vw;
   margin-left: 2vw;
+  display:flex;
+  flex-direction: column;
 }
 
 .connectDiv{
@@ -139,6 +139,7 @@
   opacity: 0.4;
   font-family: 'Source Code Pro';
   margin-bottom: 1vw;
+  font-size: 20px;
 }
 
 .icon{
@@ -152,7 +153,7 @@
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 820px) {
   .grid {
     width: 100%;
     flex-direction: column;
@@ -166,10 +167,11 @@
     display:flex;
     justify-content: center;
     width: 100%;
-    margin-top: 40vw;
+    margin-top: 35vw;
   }
 
   .nameDiv{
+
     font-size: 30px;
     margin-left: 5vw;
     width: 90vw;
@@ -210,4 +212,6 @@
     filter: invert(1);
   }
 }
+
+
 
