@@ -15,7 +15,7 @@ export default function Intro(){
         
         <a target="_blank" rel="noreferrer noopener" href='http://megansyukur.ca/about'>
             <div className={styles.learnMoreDiv}>
-            <Image src='/../public/aarrow.png' width={15} height={15} className={styles.arrow} alt="arrow"></Image>
+            <Image src={'/../public/aarrow.png'} width={15} height={15} className={styles.arrow} alt="arrow"></Image>
             <div className={styles.learnMore}>
             {'Learn more about me'}
             </div>
@@ -27,11 +27,11 @@ export default function Intro(){
 
             <div style={{display:'flex'}}>
             <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/megan-syukur/">
-                <Image src='/../public/linkedin.png' width={50} height={50} className={styles.icon}/>
+                <Image src={'/../public/linkedin.png'} width={50} height={50} className={styles.icon}/>
             </a>
 
             <Link href="mailto: megansyukur@hotmail.com" legacyBehavior>
-                <Image src='/../public/email-button.png' width={50} height={50} className={styles.icon}/>
+                <Image src={'/../public/email-button.png'} width={50} height={50} className={styles.icon}/>
             </Link>
             </div>
         </div>
