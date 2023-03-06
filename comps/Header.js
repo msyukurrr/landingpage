@@ -1,58 +1,47 @@
-import { useState } from "react";
-import { MenuOutlined } from "@mui/icons-material";
-import MenuItems from "./MenuItems";
 import Link from "next/link";
+import Image from "next/image";
+import React, { useState } from "react";
+import NavItem from "./NavItem";
 
-function Header() {
-  const [active, setActive] = useState(false);
+const MENU_LIST = [
+  { text: "About", href: "https://www.megansyukur.ca/about" },
+  { text: "Project", href: "https://www.megansyukur.ca/project" },
+  { text: "Resume", href: "https://www.megansyukur.ca/resume" },
+];
+const Header = () => {
+  const [navActive, setNavActive] = useState(null);
+  const [activeIdx, setActiveIdx] = useState(-1);
 
-  const showMenu = () => {
-    setActive(!active);
-  };
   return (
-    <div className="fixed w-full text-black flex justify-between p-4 items-center">
-      <div className="text-2xl font-bold text-center uppercase">
-        <h1>
-          <span className="block text-4xl">RESPONSIVE NAVBAR</span>
-        </h1>
-      </div>
-
-      <nav>
-        <div className="absolute right-6 md:hidden top-6 scale-150">
-          <MenuOutlined
-            onClick={showMenu}
-            className="scale-150 cursor-pointer"
-          />
+    <header>
+      <nav className={`nav`}>
+        <Link href={"/"}>
+          <Image src='/../public/logo.png' height={100} width={100}/>
+        </Link>
+        <div
+          onClick={() => setNavActive(!navActive)}
+          className={`nav__menu-bar`}
+        >
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-
-        <ul className="hidden md:flex gap-8 p-6 uppercase bg-white/10">
-          <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/projects">
-              <a>Projects</a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <a>Contact</a>
-            </Link>
-          </li>
-        </ul>
-
-        <MenuItems showMenu={showMenu} active={active} />
+        <div className={`${navActive ? "active" : ""} nav__menu-list`}>
+          {MENU_LIST.map((menu, idx) => (
+            <div
+              onClick={() => {
+                setActiveIdx(idx);
+                setNavActive(false);
+              }}
+              key={menu.text}
+            >
+              <NavItem active={activeIdx === idx} {...menu} />
+            </div>
+          ))}
+        </div>
       </nav>
-    </div>
+    </header>
   );
-}
+};
 
 export default Header;

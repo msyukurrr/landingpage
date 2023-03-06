@@ -6,7 +6,7 @@ export default function Marquee(){
     return(
         <div className={styles.marquee}>
 		
-		<div style={{display:'flex', justifyContent:'flex-end', marginRight:'1vw', marginBottom:'1vw', fontSize:20, color:'#000000', opacity:'0.4', fontFamily:'Source Code Pro'}}>{"My recent work"}</div>
+		<div style={{display:'flex', justifyContent:'flex-end', marginRight:'1vw', marginBottom:'1vw', fontSize:25, color:'#000000', opacity:'0.4', fontFamily:'Source Code Pro'}}>{"My recent work"}</div>
 
         <div className={styles.marquee__MEnU} aria-hidden="true">
             <a target="_blank" rel="noreferrer noopener" href="https://www.megansyukur.ca/menu">
